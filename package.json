@@ -1,4 +1,5 @@
 {
+  "homepage": "https://thomaspanf.github.io/docs.rocketpool.net/",
   "name": "rocketpool-docs",
   "version": "0.9.0",
   "description": "Rocket Pool Documentation - Decentralised Ethereum Liquid Staking Protocol",
@@ -17,6 +18,8 @@
     "vue": "^3.4.21"
   },
   "scripts": {
+    "predeploy": "bun run build", 
+    "deploy": "gh-pages -d dist",
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
